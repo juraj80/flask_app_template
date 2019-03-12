@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <title>Názov stránky</title>
+    <link rel="stylesheet" type="text/css"
+      href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="my-menu">
+      <a href="https://pycon.sk">PyCon SK</a>
+      <a href="{{ url_for('contact') }}">Zobraziť kontakt</a>
+      <a href="{{ url_for('home') }}">Úvod</a>
+    </div>
+    {% block content %}{% endblock %}
+  </body>
+</html>

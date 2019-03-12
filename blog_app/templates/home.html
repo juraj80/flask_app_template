@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <title>Nazov stranky</title>
-</head>
-<body>
-    <a href="https://pycon.sk">PyCon SK</a>
-    <a href="{{ url_for('contact') }}">Zobraziť kontakt</a>
-    <h1>Super Blog</h1>
-    <p>Obsah stránky</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Super Blog</h1>
+  <p>Obsah stránky</p>
+{% endblock %}
